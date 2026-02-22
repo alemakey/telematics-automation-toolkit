@@ -5,6 +5,8 @@
 [![Bash](https://img.shields.io/badge/Bash-5.x-4EAA25?style=flat-square&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Scriptable](https://img.shields.io/badge/Scriptable-iOS-black?style=flat-square&logo=apple&logoColor=white)](https://scriptable.app/)
 
+🌍 [Read in English](README.md) | [Leer en Español](README.es.md)
+
 > A curated collection of automation scripts, network management utilities, and remote control tools — built by a **Telecommunications Engineering student** to tackle real-world infrastructure challenges.
 
 ---
