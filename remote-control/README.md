@@ -1,5 +1,7 @@
 # 🖥️ Remote Control
 
+🌍 [Read in English](README.md) | [Leer en Español](README.es.md)
+
 Utilities for remotely managing devices on your network — from Wake-on-LAN to VNC sessions.
 
 ## Scripts

@@ -1,5 +1,7 @@
 # 🐍 Python Tools
 
+🌍 [Read in English](README.md) | [Leer en Español](README.es.md)
+
 Python utilities for advanced network management, subnet calculation, and SNMP polling.
 
 ## Scripts

@@ -1,5 +1,7 @@
 # 🌐 Network Monitors
 
+🌍 [Read in English](README.md) | [Leer en Español](README.es.md)
+
 Scripts in this folder continuously observe the health of your network interfaces (Wi-Fi, LAN, and WAN).
 
 ## Scripts
@@ -8,6 +10,7 @@ Scripts in this folder continuously observe the health of your network interface
 |---|---|---|
 | `ping_watchdog.py` | Python | Polls a host at a configurable interval; logs drops and latency |
 | `bandwidth_logger.sh` | Bash | Samples `ifstat` / `vnstat` output and writes to a CSV log |
+| `wifi_monitor.py` | Python | ARP-based local network scanner; alerts on unknown MAC addresses (intruder detection) |
 
 ## Usage
 
@@ -17,4 +20,10 @@ python3 ping_watchdog.py --host 192.168.1.1 --interval 5
 
 # Bandwidth logger — log eth0 usage every 10 seconds
 bash bandwidth_logger.sh --iface eth0 --interval 10 --output bw_log.csv
+
+# Wi-Fi intruder monitor — single scan
+python3 wifi_monitor.py
+
+# Wi-Fi intruder monitor — continuous loop every 30 s
+python3 wifi_monitor.py --loop --interval 30
 ```

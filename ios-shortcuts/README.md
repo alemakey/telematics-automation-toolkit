@@ -1,5 +1,7 @@
 # 📱 iOS Shortcuts — Scriptable Automations
 
+🌍 [Read in English](README.md) | [Leer en Español](README.es.md)
+
 Scripts in this folder run inside the **[Scriptable](https://scriptable.app/)** iOS app. They can be triggered manually, integrated with Apple Shortcuts, or displayed as Home Screen widgets.
 
 ## Scripts

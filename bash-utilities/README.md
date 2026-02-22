@@ -1,5 +1,7 @@
 # 🐚 Bash Utilities
 
+🌍 [Read in English](README.md) | [Leer en Español](README.es.md)
+
 General-purpose shell scripts for network administration and system management.
 
 ## Scripts
