@@ -1,143 +1,138 @@
 # 📡 Telematics Automation Toolkit
 
-[![GitHub License](https://img.shields.io/github/license/alemakey/telematics-automation-toolkit?style=flat-square)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![Bash](https://img.shields.io/badge/Bash-5.x-4EAA25?style=flat-square&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![Scriptable](https://img.shields.io/badge/Scriptable-iOS-black?style=flat-square&logo=apple&logoColor=white)](https://scriptable.app/)
+[![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)](LICENSE) ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-5.x-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white) ![Scriptable](https://img.shields.io/badge/Scriptable-iOS-black?style=for-the-badge&logo=apple&logoColor=white)
 
-🌍 [Read in English](README.md) | [Leer en Español](README.es.md)
-
-> A curated collection of automation scripts, network management utilities, and remote control tools — built by a **Telecommunications Engineering student** to tackle real-world infrastructure challenges.
+> Colección seleccionada de scripts de automatización, utilidades de gestión de red y herramientas de control remoto — creadas por un **estudiante de Ingeniería en Telemática** para resolver desafíos de infraestructura del mundo real.
 
 ---
 
-## 🧭 Purpose
+## 🧭 Propósito
 
-This repository serves as a practical toolkit for **network automation, remote system management, and cross-platform scripting**. It is designed to simplify repetitive telematic tasks, monitor network health, and extend device control through mobile and shell-based interfaces.
+Este repositorio sirve como un conjunto de herramientas prácticas para la **automatización de redes, gestión remota de sistemas y scripting multiplataforma**. Está diseñado para simplificar tareas telemáticas repetitivas, monitorear la salud de la red y extender el control de dispositivos a través de interfaces móviles y basadas en shell.
 
-Whether you're diagnosing a flaky Wi-Fi connection, scheduling network refreshes from your iPhone, or automating SSH sessions — this toolkit has you covered.
+Ya sea que estés diagnosticando una conexión Wi-Fi inestable, programando reinicios de red desde tu iPhone o automatizando sesiones SSH, este toolkit tiene lo que necesitas.
 
 ---
 
-## 📁 Repository Structure
+## 📁 Estructura del repositorio
 
-```
+```text
 telematics-automation-toolkit/
 │
-├── network-monitors/          # Scripts to monitor Wi-Fi, LAN, and internet health
-│   ├── ping_watchdog.py       # Continuous ping monitor with alert support
-│   ├── bandwidth_logger.sh    # Logs bandwidth usage over time
+├── network-monitors/          # Scripts para monitorear la salud de Wi-Fi, LAN e Internet
+│   ├── ping_watchdog.py       # Monitor de ping continuo con soporte de alertas
+│   ├── bandwidth_logger.sh    # Registra el uso de ancho de banda a lo largo del tiempo
 │   └── README.md
 │
-├── ios-shortcuts/             # Scriptable (iOS) automations and shortcuts
-│   ├── network_refresh.js     # HTTP check & network refresh skeleton
+├── ios-shortcuts/             # Automatizaciones y atajos para Scriptable (iOS)
+│   ├── network_refresh.js     # Esqueleto para comprobación HTTP y reinicio de red
 │   └── README.md
 │
-├── bash-utilities/            # General-purpose Bash scripts for sysadmin tasks
-│   ├── ssh_tunnel.sh          # Quick SSH tunnel helper
-│   ├── port_scanner.sh        # Lightweight local network port scanner
+├── bash-utilities/            # Scripts Bash de propósito general para tareas de sysadmin
+│   ├── ssh_tunnel.sh          # Ayudante rápido para túneles SSH
+│   ├── port_scanner.sh        # Escáner de puertos ligero para redes locales
 │   └── README.md
 │
-├── python-tools/              # Python scripts for network management & automation
-│   ├── subnet_calculator.py   # CIDR subnet breakdown tool
-│   ├── snmp_poller.py         # SNMP v2c device poller
+├── python-tools/              # Scripts Python para gestión y automatización de redes
+│   ├── subnet_calculator.py   # Herramienta de desglose de subredes CIDR
+│   ├── snmp_poller.py         # Recopilador de datos de dispositivos SNMP v2c
 │   └── README.md
 │
-├── remote-control/            # Remote device management utilities
-│   ├── wake_on_lan.py         # Wake-on-LAN magic packet sender
-│   ├── vnc_launcher.sh        # VNC session launcher wrapper
+├── remote-control/            # Utilidades de gestión remota de dispositivos
+│   ├── wake_on_lan.py         # Emisor de paquetes mágicos Wake-on-LAN
+│   ├── vnc_launcher.sh        # Envoltorio para lanzar sesiones VNC
 │   └── README.md
 │
-└── README.md                  ← You are here
+└── README.md                  ← Estás aquí
 ```
 
 ---
 
-## 🛠️ Technologies & Tools
+## 🛠️ Tecnologías y Herramientas
 
-| Category              | Technologies                                                                 |
-|-----------------------|------------------------------------------------------------------------------|
-| **Scripting Languages** | Python 3, Bash / Shell, JavaScript (Scriptable)                            |
-| **Network Protocols** | TCP/IP, ICMP (Ping), SNMP v2c/v3, SSH, Wake-on-LAN (WoL), DNS               |
-| **Mobile Automation** | [Scriptable](https://scriptable.app/) (iOS), Apple Shortcuts                |
-| **Shell Utilities**   | `shellmini`, `nmap`, `netcat`, `arp-scan`, `iproute2`                        |
-| **Python Libraries**  | `scapy`, `paramiko`, `requests`, `pysnmp`, `netifaces`                      |
-| **Platforms**         | Linux (Debian/Ubuntu), macOS, iOS, Raspberry Pi (ARMv7/v8)                  |
-| **Version Control**   | Git, GitHub Actions (CI for linting and testing)                             |
+| Categoría | Tecnologías |
+| --------- | ----------- |
+| **Lenguajes de Scripting** | Python 3, Bash / Shell, JavaScript (Scriptable) |
+| **Protocolos de Red** | TCP/IP, ICMP (Ping), SNMP v2c/v3, SSH, Wake-on-LAN (WoL), DNS |
+| **Automatización Móvil** | [Scriptable](https://scriptable.app/) (iOS), Atajos de Apple |
+| **Utilidades Shell** | `shellmini`, `nmap`, `netcat`, `arp-scan`, `iproute2` |
+| **Librerías Python** | `scapy`, `paramiko`, `requests`, `pysnmp`, `netifaces` |
+| **Plataformas** | Linux (Debian/Ubuntu), macOS, iOS, Raspberry Pi (ARMv7/v8) |
+| **Control de Versiones** | Git, GitHub Actions (CI para linting y pruebas) |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Cómo empezar
 
-### Prerequisites
+### Requisitos previos
 
-- **Python 3.10+** — [Download](https://python.org/downloads)
-- **Bash 5.x** — Available natively on Linux/macOS; use WSL2 on Windows
+- **Python 3.10+** — [Descargar](https://python.org/downloads)
+- **Bash 5.x** — Disponible nativamente en Linux/macOS; usa WSL2 en Windows
 - **Scriptable** — [App Store](https://apps.apple.com/app/scriptable/id1405459188) (iOS/iPadOS)
-- **Git** — `sudo apt install git` or [git-scm.com](https://git-scm.com)
+- **Git** — `sudo apt install git` o [git-scm.com](https://git-scm.com)
 
-### Installation
+### Instalación
 
 ```bash
-# Clone the repository
+# Clonar el repositorio
 git clone https://github.com/alemakey/telematics-automation-toolkit.git
 cd telematics-automation-toolkit
 
-# (Optional) Create a Python virtual environment
+# (Opcional) Crear un entorno virtual de Python
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Install Python dependencies
+# Instalar dependencias de Python
 pip install -r requirements.txt
 ```
 
-### Running a script example
+### Ejecutar un ejemplo de script
 
 ```bash
-# Monitor your gateway with the ping watchdog
+# Monitorear tu puerta de enlace con el watchdog de ping
 python3 network-monitors/ping_watchdog.py --host 192.168.1.1 --interval 5
 
-# Run the port scanner on your local subnet
+# Ejecutar el escáner de puertos en tu subred local
 bash bash-utilities/port_scanner.sh 192.168.1.0/24
 ```
 
 ---
 
-## 📱 iOS / Scriptable Integration
+## 📱 Integración con iOS / Scriptable
 
-Scripts in `/ios-shortcuts` are designed for the **[Scriptable](https://scriptable.app/)** app on iOS/iPadOS. They allow you to:
+Los scripts en `/ios-shortcuts` están diseñados para la aplicación **[Scriptable](https://scriptable.app/)** en iOS/iPadOS. Te permiten:
 
-- Run network health checks directly from your iPhone/iPad
-- Trigger automations via the Apple Shortcuts app
-- Display network status widgets on your Home Screen
+- Ejecutar comprobaciones de salud de la red directamente desde tu iPhone/iPad
+- Desactivar automatizaciones a través de la aplicación Atajos de Apple
+- Mostrar widgets de estado de la red en tu pantalla de inicio
 
-To use them: copy the `.js` file content into a new Scriptable script, or import via iCloud Drive.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Add SNMP trap listener
-- [ ] Build a Wi-Fi signal strength heatmap generator (Python + matplotlib)
-- [ ] Create an iOS widget for real-time bandwidth display
-- [ ] Add GitHub Actions workflow for script linting (ShellCheck, pylint)
-- [ ] Integrate Raspberry Pi GPIO for physical network status indicators
+Para usarlos: copia el contenido del archivo `.js` en un nuevo script de Scriptable, o impórtalo a través de iCloud Drive.
 
 ---
 
-## 👤 Author
+## 🗺️ Hoja de Ruta (Roadmap)
 
-**Victor / alemakey**
-> Telecommunications Engineering Student | Network Automation Enthusiast
-
-[![GitHub](https://img.shields.io/badge/GitHub-alemakey-181717?style=flat-square&logo=github)](https://github.com/alemakey)
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+- [ ] Añadir listener de traps SNMP
+- [ ] Construir un generador de mapas de calor de fuerza de señal Wi-Fi (Python + matplotlib)
+- [ ] Crear un widget de iOS para visualización de ancho de banda en tiempo real
+- [ ] Añadir flujo de trabajo de GitHub Actions para linting de scripts (ShellCheck, pylint)
+- [ ] Integrar GPIO de Raspberry Pi para indicadores físicos de estado de la red
 
 ---
 
-*Built with ☕ and a passion for networks.*
+## 👤 Autor
+
+**Victor Reyna**  
+> Estudiante de Ingeniería Telemática | Entusiasta de la Automatización de Redes
+
+[![GitHub](https://img.shields.io/badge/GitHub-alemakey-181717?style=for-the-badge&logo=github)](https://github.com/alemakey)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la **Licencia MIT** — consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+*Construido con ❤️ y mucha pasión por las redes.*
